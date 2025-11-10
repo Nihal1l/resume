@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pankoz Nihal — Resume</title>
+  <style>
+    /* A4 vertical page settings */
+    @page { size: A4; margin: 20mm; }
+    html,body{height:297mm;margin:0;padding:0;background:#f6f7fb}
+    body{font-family: Arial, Helvetica, sans-serif; font-size:11pt; color:#1b2430; -webkit-print-color-adjust:exact;}
+    .page{width:210mm;min-height:297mm;margin:0 auto;background:#ffffff;padding:18mm 16mm;box-sizing:border-box;box-shadow:0 0 0 1px rgba(0,0,0,0.04)}
+
+    /* Header */
+    .header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:4px solid #e9eef3;padding-bottom:8px;margin-bottom:10px}
+    .name{font-size:20pt;font-weight:700;color:#0b3b56}
+    .contact{font-size:10pt;color:#234e63;text-align:right}
+    .contact a{color:#0b5c81;text-decoration:none}
+
+    /* Sections */
+    .section{margin-bottom:10px}
+    .section h2{font-size:10.5pt;margin:6px 0 6px 0;color:#0b3b56;border-left:4px solid #0b5c81;padding-left:8px}
+    .job-title{font-weight:700}
+    .muted{color:#44606f;font-size:9.5pt}
+    .bullets{margin:6px 0 6px 18px}
+    .bullets li{margin-bottom:4px}
+
+    /* Projects list compact */
+    .projects li{margin-bottom:6px}
+    .projects b{color:#083a50}
+
+    /* Footer / small print */
+    .footer{position:relative;margin-top:6px;border-top:1px dashed #e6eef2;padding-top:6px;font-size:9pt;color:#426075}
+
+    /* Make links look clean (no underline) but printable and clickable) */
+    a{color:#0b5c81;text-decoration:none}
+    a:after{content:''}
+
+    /* Ensure one page when printed */
+    @media print{
+      body{background:#fff}
+      .page{box-shadow:none;margin:0;padding:12mm}
+      .header{border-bottom:3px solid #e9eef3}
+      .footer{border-top:1px dashed #dbe9f0}
+      a{color:#0b5c81}
+      @page { size: A4; margin: 12mm; }
+    }
+
+    /* Use more vertical fill by increasing spacing */
+    .work .meta{display:flex;justify-content:space-between}
+    .cols{display:flex;gap:18px}
+    .left{flex:1}
+    .right{width:220px}
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <div>
+        <div class="name">Pankoz Nihal</div>
+        <div class="muted">Master of Science (CSE) — Jagannath University - 2025</div>
+      </div>
+      <div class="contact">
+        <div>p.b.nihalcse1@gmail.com | +8801762361365</div>
+        <div>Dhaka, Bangladesh</div>
+        <div style="margin-top:6px"><a href="https://nihal1l.github.io/portfolio" target="_blank">Portfolio</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/p-b-nihal/" target="_blank">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/Nihal1l" target="_blank">GitHub</a></div>
+        <div style="margin-top:4px"><a href="https://eventhub-crgq.onrender.com/" target="_blank">Live Project: EventHub</a> </br>
+        <a href="https://job-board-backend-api.onrender.com/" target="_blank">Live Project: Job Board Backend API</a></div>
+      </div>
+    </div>
+
+    <div class="section work">
+      <h2>Work Experience</h2>
+      <div class="meta">
+        <div>
+          <div class="job-title">Softvence — <span style="font-weight:600">Software Engineer</span></div>
+          <div class="muted">Jul 2024 – Present | Dhaka, Bangladesh</div>
+        </div>
+        <div class="muted" style="text-align:right;">Technical: Django, FastAPI, Py4Web, PostgreSQL & MySQL</div>
+      </div>
+      <ul class="bullets">
+        <li>Built and maintained web applications using Django, FastAPI, Py4Web, and Web2py.</li>
+        <li>Designed and optimized databases to ensure performance and scalability.</li>
+        <li>Developed RESTful APIs and integrated third-party services.</li>
+        <li>Diagnosed and optimized applications to improve system performance.</li>
+      </ul>
+    </div>
+
+    <div class="cols">
+      <div class="left">
+        <div class="section">
+          <h2>Projects</h2>
+          <ul class="projects">
+            <li><b>EventHub (Django):</b> Developed full-stack event management app with authentication, RBAC, and CRUD features; optimized database performance and built a responsive UI with Tailwind CSS.</li>
+            <li><b>Job Board Backend API (Django Rest Framework):</b> Built a backend API for job board application with authentication, job listings, and application management.</li>
+            <li><b>TasksHandle (Django):</b> Built task management app with user accounts, CRUD operations, and persistent database storage for streamlined task tracking.</li>
+            <li><b>CrudApp:</b> Created a web application supporting CRUD operations with UI and database integration.</li>
+            <li><b>Python-with-OOP:</b> Implemented OOP concepts in Python producing modular and maintainable code.</li>
+            <li><b>HumanActivity (ML):</b> Developed a system to detect and classify human activities with data collection, feature extraction, and ML model training.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Volunteer Experience</h2>
+          <div class="job-title">ICT Division — Programming Contest with Risers</div>
+          <div class="muted">Feb 2024 – Apr 2024 | Dhaka, Bangladesh</div>
+          <ul class="bullets">
+            <li>Analyzed programming problems and formulated efficient algorithms to solve them within time constraints.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Certifications</h2>
+          <ul class="bullets">
+            <li>PMI Project Management Professional (PMP)</li>
+            <li>Database Structures & Algorithms; Software Development (PHITRON)</li>
+            <li>Web Development & Business Communication (BASIS – Bangladesh)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="section">
+          <h2>Education</h2>
+          <div class="job-title">Jagannath University</div>
+          <div class="muted">M.Sc in Computer Science & Engineering — 2025</div>
+        </div>
+
+        <div class="section">
+          <h2>Skills</h2>
+          <div class="muted">Technical</div>
+          <ul class="bullets">
+            <li>Python, Django, FastAPI, Py4Web & Web2py</li>
+            <li>MySQL, PostgreSQL, AWS</li>
+            <li>HTML, CSS, Tailwind, Bootstrap, JavaScript, JQuery, React.js & Vue.js</li>
+            <li>REST APIs, Git/GitHub, AJAX</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Strengths & Interests</h2>
+          <ul class="bullets">
+            <li>Problem-Solving, Database Design, API Development</li>
+            <li>Debugging, Code Optimization, Requirement Analysis</li>
+            <li>Interests: Research, Building Scalable Apps, Chess, Classical Guitar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      GitHub: <a href="https://github.com/Nihal1l" target="_blank">github.com/Nihal1l</a> &nbsp;•&nbsp; LinkedIn: <a href="https://www.linkedin.com/in/p-b-nihal/" target="_blank">/in/p-b-nihal</a> &nbsp;•&nbsp; Live: <a href="https://eventhub-crgq.onrender.com/" target="_blank">eventhub-crgq.onrender.com</a> &nbsp;•&nbsp; <a href="https://job-board-backend-api.onrender.com/" target="_blank">job-board-backend-api.onrender.com</a> &nbsp;•&nbsp;<a href="https://nihal1l.github.io/portfolio" target="_blank">portfolio</a> 
+    </div>
+  </div>
+</body>
+</html>
